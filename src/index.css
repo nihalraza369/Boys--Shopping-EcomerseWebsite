@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%; /* Very dark blue, almost black */
+    --foreground: 210 40% 98%; /* Light grey/white for text */
+    --card: 224 71% 9%; /* Slightly lighter dark blue for cards */
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%; /* Primary actions text color */
+    --primary-foreground: 224 71% 15%; /* Primary actions background */
+    --secondary: 224 71% 15%; /* Secondary elements background */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 224 71% 15%;
+    --muted-foreground: 210 40% 60%; /* Muted text */
+    --accent: 180 90% 45%; /* Teal accent */
+    --accent-foreground: 224 71% 4%;
+    --destructive: 0 72% 51%; /* Red for destructive actions */
+    --destructive-foreground: 210 40% 98%;
+    --border: 224 71% 15%; /* Border color */
+    --input: 224 71% 15%;
+    --ring: 180 90% 45%; /* Ring color for focus states (teal) */
+  }
+}
+
+
+
+.gradient-text-brand {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-cyan-400 to-teal-500;
+}
+
+.gradient-bg-brand {
+  @apply bg-gradient-to-r from-sky-500 via-cyan-500 to-teal-600 hover:from-sky-600 hover:via-cyan-600 hover:to-teal-700;
+}
+
+.card-hover-effect {
+  @apply transition-all duration-300 ease-in-out hover:shadow-2xl hover:shadow-accent/20 hover:-translate-y-2;
+}
+
+.nav-link {
+  @apply relative px-3 py-2 text-foreground/80 hover:text-foreground transition-colors duration-200;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-sky-400 to-teal-500 transition-all duration-300;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+  @apply w-full;
+}
+
+.section-padding {
+  @apply py-20 md:py-28;
+}
+
+.container-custom {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.category-card {
+  @apply bg-card border border-border rounded-xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:border-accent/50 cursor-pointer;
+}
+
+.product-card {
+  @apply bg-card border border-border rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:shadow-accent/20 hover:-translate-y-1;
+}
+
+.carousel-button {
+  @apply absolute top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-3 rounded-full transition-all duration-300 z-10;
+}
+
+.carousel-dot {
+  @apply w-3 h-3 rounded-full bg-muted/50 hover:bg-muted transition-colors duration-200 cursor-pointer;
+}
+
+.carousel-dot.active {
+  @apply bg-accent;
+}
+
+.glassmorphic-overlay {
+  background: rgba(20, 20, 30, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-image-container {
+  @apply relative rounded-xl overflow-hidden shadow-2xl;
+}
