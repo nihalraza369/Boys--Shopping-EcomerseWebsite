@@ -48,9 +48,9 @@ const HomePage = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-4">Why Shop With <span className="gradient-text-brand">KidStyle?</span></h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4">Why Shop With <span className="gradient-text-brand">Nihal Clothes?</span></h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We're dedicated to providing the best for your little ones.
+              We're dedicated to providing the best for your Stylish ones.
             </p>
           </motion.div>
           <motion.div 
@@ -102,7 +102,7 @@ const HomePage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Browse our collections today and give your little one a style upgrade. Enjoy exclusive deals and new arrivals!
+            Browse our collections today and give your man one a style upgrade. Enjoy exclusive deals and new arrivals!
           </motion.p>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
