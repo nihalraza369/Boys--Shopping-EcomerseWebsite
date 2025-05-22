@@ -45,7 +45,7 @@ const HeroSection = () => {
             variants={itemVariants}
             className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight"
           >
-            Style Up Your <span className="gradient-text-brand">Little Champ</span>
+            Style Up Your <span className="gradient-text-brand">Stylish Champ</span>
           </motion.h1>
           
           <motion.p 
