@@ -68,7 +68,7 @@ const CategoryPage = () => {
             {pageTitle} <span className="gradient-text-brand">Collection</span>
           </h1>
           <p className="text-lg text-muted-foreground">
-            Discover stylish and comfortable {pageTitle.toLowerCase()} for your little one.
+            Discover stylish and comfortable {pageTitle.toLowerCase()} for your Gentleman one.
           </p>
         </motion.div>
 
