@@ -62,7 +62,7 @@ const FeaturedCategories = () => {
         >
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4">Shop By <span className="gradient-text-brand">Category</span></h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore our curated collections tailored for every little personality and occasion.
+            Explore our curated collections tailored for every Stylish personality and occasion.
           </p>
         </motion.div>
 
