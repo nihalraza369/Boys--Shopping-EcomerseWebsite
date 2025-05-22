@@ -39,7 +39,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
           >
             <Link to="/" className="text-3xl font-extrabold">
-              <span className="gradient-text-brand">KidStyle</span>
+              <span className="gradient-text-brand">Nihal Clothes</span>
             </Link>
           </motion.div>
 
