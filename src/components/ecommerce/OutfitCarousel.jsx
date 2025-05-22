@@ -110,7 +110,7 @@ const OutfitCarousel = () => {
         >
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4">Featured <span className="gradient-text-brand">Outfits</span></h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Get inspired with our handpicked complete looks for your little trendsetter.
+            Get inspired with our handpicked complete looks for your man trendsetter.
           </p>
         </motion.div>
 
