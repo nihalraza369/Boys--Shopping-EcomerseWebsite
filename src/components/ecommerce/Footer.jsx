@@ -62,10 +62,10 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Link to="/" className="text-3xl font-extrabold mb-4 inline-block">
-              <span className="gradient-text-brand">KidStyle</span>
+              <span className="gradient-text-brand">Nihal Clothes</span>
             </Link>
             <p className="text-muted-foreground text-sm mb-6">
-              Dress your little ones in style with our trendy and comfortable clothing collections.
+              Dress your young ones in style with our trendy and comfortable clothing collections.
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((social, index) => (
@@ -114,7 +114,7 @@ const Footer = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            © {currentYear} KidStyle. All rights reserved.
+            © {currentYear} Nihal Clothes. All rights reserved.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
